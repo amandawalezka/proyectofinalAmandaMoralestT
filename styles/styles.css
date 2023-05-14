@@ -1,0 +1,58 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url("../fonts/SourceSansPro-Light.ttf");
+}
+header{
+    display: flex;
+    flex-direction: row;
+}
+.header-logo{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    padding: 0px;
+    margin: 0%;
+    /* position: absolute; */
+    border-radius: 0.75rem;
+}
+.mainMenu{
+    width: 100px;
+    font-size: 30px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+.citaBoton{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+}
+h3 {
+    font-size: 30px;
+}
+.gift-cardimg{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+}
+.gift-cardparf{
+    display: inline;
+    font-size: 15.7px;
+}
+.logo-footer{
+    width: 100px;
+    margin: 0;
+}
+.infoContact{
+}
