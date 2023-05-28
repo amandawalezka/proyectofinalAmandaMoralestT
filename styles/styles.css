@@ -1,36 +1,22 @@
 *{
-    font-family: 'Source Sans Pro', sans-serif;;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0%;
+    box-sizing: border-box;
 }
 @font-face {
-    font-family: 'SourceSansPro';
-    src: url("../fonts/SourceSansPro-Light.ttf");
+    font-family: 'Source Sans Pro';
+    src: url(../assets/fonts/SourceSansPro-Regular.ttf);
 }
-header{
-    display: flex;
-    flex-direction: row;
+@font-face {
+    font-family: 'Source Sans ProBoldItalic';
+    src: url(../assets/fonts/SourceSansPro-BoldItalic.ttf);
 }
-.header-logo{
-    display: flex;
-    flex-direction: row;
-    width: 100px;
-    padding: 0px;
-    margin: 0%;
-    /* position: absolute; */
-    border-radius: 0.75rem;
+@font-face {
+    font-family: 'SemiBoldItalic';
+    src: url(../assets/fonts/SourceSansPro-SemiBoldItalic.ttf);
 }
-.mainMenu{
-    width: 100px;
-    font-size: 30px;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-}
-.citaBoton{
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+a{
+    text-decoration: none;
 }
 ul{
     list-style: none;
@@ -38,21 +24,279 @@ ul{
 li a{
     text-decoration: none;
 }
-h3 {
-    font-size: 30px;
+h2 {
+    font-size: 27px;
 }
-.gift-cardimg{
-    width: 400px;
+.logo-container{
+    width: 130px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-start;    
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+header{
+    width: 2500px;
+    height: 100px;
+    background-color: #f5e3c5;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    box-sizing: border-box
 }
-.gift-cardparf{
-    display: inline;
-    font-size: 15.7px;
+.main-container{
+    max-width: 1200px;
+    width: 100%;
+    height: 60px;
+    font-family: 'Source Sans ProBoldItalic';
 }
-.logo-footer{
+header .main-container nav ul li a{
+    color: #000000;
+    padding: 0 25px;
+    font-family: inherit;
+}
+header .main-container nav ul li a:hover{
+    color: rgb(158, 128, 28);
+    font-weight: bold;
+    font-size: 18px;
+}
+header .main-container nav ul li{
     width: 100px;
-    margin: 0;
+    padding: 10px 0;
+    margin: 0%;
+    height: inherit;
+    font-size: 20px;
+    display: inline;
+    /* position:fixed; */
 }
-.infoContact{
+/* SECCION INICIO*/
+    section#inicio{
+    width: 100%;
+    height: 587px;
+    background-color: rgb(136, 136, 130);
+}
+section#inicio .img-cover{
+    height: inherit;
+    background-image: url("../assets/images/header-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.citabtn{
+    width: 70%;
+    height: 109%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+.citabtn:hover{
+    opacity: 0.9;
+}
+section#seccion1{
+    /* background-color: blanchedalmond; */
+    width: 100%;
+}
+#servicios{
+    text-align: center;
+    font-family: 'SemiBoldItalic';
+}
+.element-divider{
+    border-style: solid;
+    color: #a6721d;
+    border-width: 1px;
+    width: 25%;
+    margin: 0 auto;
+}
+.imagen-menu{
+    width: 300px;
+    margin: 50px 70px;
+    display: block;
+    float: left;
+}
+.lista-masajes h4{
+    text-transform: uppercase;
+}
+.lista-masajes{
+    margin-top: 16px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 120px;
+    padding: 10px;
+    letter-spacing: 0.040em;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.tratamientos h4{
+    text-transform: uppercase;
+}
+.tratamientos{
+    margin-top: 70px;
+    margin-left: 90px;
+    padding: 90px 290px;
+    letter-spacing: 0.040em;
+    font-size: 20px;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img-tratamientos{
+    float: right;
+    width: 300px;
+    margin: 50px 70px;
+    display: block;
+}
+#promo{
+    text-align: center;
+    font-family: 'SemiBoldItalic';
+}
+.certf-regalo{
+    width: 400px;
+    margin: 50px;
+    float: left;
+    border-style: groove;
+}
+.gift-cardpartext h4{
+    padding: 0 0 1rem;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.040em;
+}
+.gift-cardpartext{
+    margin: 80px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    letter-spacing: 0.040em;
+    line-height: 20px;
+}
+#nuevo{
+    text-align: center;
+    font-family: 'SemiBoldItalic';
+}
+.novimagen-1{
+    width: 300px;
+}
+h5{
+    font-size: 17px;
+    color: rgb(19, 163, 163);
+    padding: 0 0 0rem;
+    letter-spacing: 0.040em;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+.nov-info1 h5{
+    margin-left: 50px;
+}
+.nov-info1 p{
+    font-size: 15px;
+    letter-spacing: 0.020em;
+    line-height: 30px;
+}
+.nov-info1{
+    margin-top: 55px;
+    margin-left: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nov-info2 p{
+    font-size: 15px;
+    letter-spacing: 0.030em; 
+    line-height: 30px;
+}
+.novimagen-2{
+    width: 300px;
+}
+.nov-info2{
+    margin-top: -328px;
+    margin-bottom: 0px;
+    margin-left: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#contacto{
+    background-color: #fdfaf3;
+}
+#contacto .main-title{
+    margin: 10px 22px;
+}
+/* #contacto .form-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+} */
+#contacto form input, #contacto form textarea{
+    font-family: 'SemiBoldItalic';
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    margin: 15px;
+    width: 500px;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    outline: none;
+    box-shadow: 0px 5px 10px 0px #bdbbbb;
+}
+.whatsapp{
+    width: 4%;
+    margin: 10px 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.info{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#a6721d;
+}
+.info ul{
+    margin-bottom: 0px;
+    margin-top: -405px;
+    margin-left: 462px;
+    margin-right: 0px;
+    line-height: 2;
+}
+footer{
+    background-color: #f5e3c5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    color: #0a0a0a;
+}
+footer .social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+footer .social-media .social-media-box{
+    margin: 10px;
+}
+footer .social-media .social-media-box img{
+    width: 30px;
+    height: 30px;
 }
